@@ -88,12 +88,12 @@ namespace Plugin.Boilerplate.Services.Request
             return httpClient;
         }
 
-        private bool IsEmail(string email)
+        private static bool IsEmail(string email)
         {
             return new EmailAddressAttribute().IsValid(email);
         }
 
-        private async Task HandleResponse(HttpResponseMessage response)
+        private static async Task HandleResponse(HttpResponseMessage response)
         {
             if (!response.IsSuccessStatusCode)
             {

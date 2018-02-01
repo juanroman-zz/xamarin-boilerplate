@@ -7,20 +7,17 @@ namespace Plugin.Boilerplate.ViewModels
 {
     public abstract class ViewModelBase : BaseNotify
     {
-        private readonly IDialogService _dialogService;
-        private readonly INavigationService _navigationService;
-
         private bool _isBusy;
         private string _title;
 
         protected ViewModelBase()
         {
-            _dialogService = LocatorBase.Instance.Resolve<IDialogService>();
-            _navigationService = LocatorBase.Instance.Resolve<INavigationService>();
+            DialogService = LocatorBase.Instance.Resolve<IDialogService>();
+            NavigationService = LocatorBase.Instance.Resolve<INavigationService>();
         }
 
-        public IDialogService DialogService => _dialogService;
-        public INavigationService NavigationService => _navigationService;
+        public IDialogService DialogService { get; }
+        public INavigationService NavigationService { get; }
 
         public bool IsBusy
         {

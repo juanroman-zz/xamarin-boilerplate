@@ -30,7 +30,7 @@ namespace Plugin.Boilerplate.Behaviors
                 listView.SelectedItem = null;
 
                 var command = GetItemTappedCommand(listView);
-                if (null != command && command.CanExecute(e.Item))
+                if (command?.CanExecute(e.Item) == true)
                 {
                     command.Execute(e.Item);
                 }

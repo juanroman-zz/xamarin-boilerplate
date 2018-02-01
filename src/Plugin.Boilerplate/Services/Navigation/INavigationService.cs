@@ -17,7 +17,5 @@ namespace Plugin.Boilerplate.Services.Navigation
         Task NavigateToAsync(Type viewModelType, object parameter);
 
         Task NavigateBackAsync();
-
-        Task RemoveLastFromBackStackAsync();
     }
 }

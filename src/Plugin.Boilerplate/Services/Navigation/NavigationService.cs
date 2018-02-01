@@ -69,8 +69,6 @@ namespace Plugin.Boilerplate.Services.Navigation
             return InternalNavigateToAsync(viewModelType, parameter);
         }
 
-        public Task RemoveLastFromBackStackAsync() => throw new NotImplementedException();
-
         protected virtual void CreatePageViewModelMappings()
         {
             Mappings.Add(typeof(ExtendedSplashViewModel), typeof(ExtendedSplashPage));

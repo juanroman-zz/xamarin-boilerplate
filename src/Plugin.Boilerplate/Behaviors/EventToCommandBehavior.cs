@@ -67,7 +67,7 @@ namespace Plugin.Boilerplate.Behaviors
                                          .ToArray();
             if (events.Length > 0)
             {
-                _eventInfo = events.FirstOrDefault(e => e.Name == EventName) ?? throw new ArgumentException($"EventToCommand: Can't find any event named '{EventName}' on attached type.");
+                _eventInfo = Array.Find(events, e => e.Name == EventName) ?? throw new ArgumentException($"EventToCommand: Can't find any event named '{EventName}' on attached type.");
                 AddEventHandler(_eventInfo, AssociatedObject, OnFired);
             }
         }
