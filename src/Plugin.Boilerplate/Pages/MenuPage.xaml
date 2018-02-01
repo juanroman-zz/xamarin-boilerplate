@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Plugin.Boilerplate.Behaviors;assembly=Plugin.Boilerplate"
+             xmlns:extensions="clr-namespace:Plugin.Boilerplate.MarkupExtensions;assembly=Plugin.Boilerplate"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:views="clr-namespace:Plugin.Boilerplate.Views;assembly=Plugin.Boilerplate"
+             x:Class="Plugin.Boilerplate.Pages.MenuPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="UsernamePanelStyle" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Vertical"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+            </Style>
+
+            <Style x:Key="HelloTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource LargerSize}"/>
+                <Setter Property="TextColor" Value="{StaticResource WhiteColor}"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+            </Style>
+
+            <Style x:Key="UsernameTextStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource LargerSize}"/>
+                <Setter Property="LineBreakMode" Value="TailTruncation"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="75*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <ffimageloading:CachedImage Aspect="AspectFill"
+                                            Source="{Binding UserAvatar}"
+                                            CacheType="Disk"
+                                            CacheDuration="30"
+                                            LoadingPlaceholder="avatar" />
+                <Grid BackgroundColor="#293849" Opacity="0.6"/>
+                <StackLayout Padding="44,0,0,10"
+                             Spacing="0"
+                             Style="{StaticResource UsernamePanelStyle}">
+                    <Label Text="{extensions:Translate Hello}"
+                           Style="{StaticResource HelloTextStyle}"/>
+                    <Label Text="{Binding UserName}"
+                           Style="{StaticResource UsernameTextStyle}"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <ListView AutomationId="menu"
+                          ItemsSource="{Binding MenuItems}"
+                          CachingStrategy="RecycleElement"
+                          SeparatorVisibility="None"
+                          HasUnevenRows="True"
+                          behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding MenuItemSelectCommand}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <views:MenuItemView/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

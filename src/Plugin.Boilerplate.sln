@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Boilerplate", "Plugin.Boilerplate\Plugin.Boilerplate.csproj", "{13AED442-F59F-45A0-875B-B6C19FE8BDE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Boilerplate.iOS", "Plugin.Boilerplate.iOS\Plugin.Boilerplate.iOS.csproj", "{CAF3B447-5566-42C1-9DEA-D51F0161F78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Boilerplate.Android", "Plugin.Boilerplate.Android\Plugin.Boilerplate.Android.csproj", "{E5CAD23E-9003-4666-8A19-73A689A03B9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13AED442-F59F-45A0-875B-B6C19FE8BDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AED442-F59F-45A0-875B-B6C19FE8BDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AED442-F59F-45A0-875B-B6C19FE8BDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AED442-F59F-45A0-875B-B6C19FE8BDE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF3B447-5566-42C1-9DEA-D51F0161F78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF3B447-5566-42C1-9DEA-D51F0161F78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF3B447-5566-42C1-9DEA-D51F0161F78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF3B447-5566-42C1-9DEA-D51F0161F78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5CAD23E-9003-4666-8A19-73A689A03B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5CAD23E-9003-4666-8A19-73A689A03B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5CAD23E-9003-4666-8A19-73A689A03B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5CAD23E-9003-4666-8A19-73A689A03B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
