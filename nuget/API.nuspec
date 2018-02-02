@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="2.8.1">
+        <id>Plugin.Boilerplate</id>
+        <version>0.1.0.0</version>
+        <title>Xamarin Forms Boilerplate</title>
+        <authors>Juan Roman Escamilla</authors>
+        <copyright>Copyright (C) Juan Roman Escamilla 2018</copyright>
+        <owners>juanroman</owners>
+        <licenseUrl>https://github.com/juanroman/xamarin-boilerplate/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/juanroman/xamarin-boilerplate</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A simple mobile model code set used through several custom Xamarin Forms applications.</description>
+        <releaseNotes>See: https://github.com/juanroman/xamarin-boilerplate/blob/master/CHANGELOG.md</releaseNotes>
+        <summary>A library with boilerplate utilities targeting Xamarin Forms projects.</summary>
+        <tags>xamarin, pcl, xam.pcl, xamarin.android, xamarin.ios, android, xamarin.forms, ios</tags>
+        <dependencies>
+            <group targetFramework="netstandard2.0">
+                <dependency id="NETStandard.Library" version="2.0.0" />
+                <dependency id="Acr.UserDialogs" version="7.0.1" />
+                <dependency id="Autofac" version="4.6.2" />
+                <dependency id="Microsoft.Azure.Mobile.Client" version="4.0.2" />
+                <dependency id="Microsoft.Azure.Mobile.Client.SQLiteStore" version="4.0.2" />
+                <dependency id="Newtonsoft.Json" version="10.0.3" />
+                <dependency id="System.ComponentModel.Annotations" version="4.4.1" />
+                <dependency id="Xam.Plugin.Connectivity" version="3.1.1" />
+                <dependency id="Xamarin.FFImageLoading.Forms" version="2.3.4" />
+                <dependency id="Xamarin.FFImageLoading.Transformations" version="2.3.4" />
+                <dependency id="Xamarin.Forms" version="2.5.0.122203" />
+            </group>
+            <group targetFramework="MonoAndroid10">
+                <dependency id="NETStandard.Library" version="2.0.0" />
+                <dependency id="Acr.UserDialogs" version="7.0.1" />
+                <dependency id="Autofac" version="4.6.2" />
+                <dependency id="Microsoft.Azure.Mobile.Client" version="4.0.2" />
+                <dependency id="Microsoft.Azure.Mobile.Client.SQLiteStore" version="4.0.2" />
+                <dependency id="Newtonsoft.Json" version="10.0.3" />
+                <dependency id="System.ComponentModel.Annotations" version="4.4.1" />
+                <dependency id="Xam.Plugin.Connectivity" version="3.1.1" />
+                <dependency id="Xamarin.FFImageLoading.Forms" version="2.3.4" />
+                <dependency id="Xamarin.FFImageLoading.Transformations" version="2.3.4" />
+                <dependency id="Xamarin.Forms" version="2.5.0.122203" />
+            </group>
+            <group targetFramework="Xamarin.iOS10">
+                <dependency id="NETStandard.Library" version="2.0.0" />
+                <dependency id="Acr.UserDialogs" version="7.0.1" />
+                <dependency id="Autofac" version="4.6.2" />
+                <dependency id="Microsoft.Azure.Mobile.Client" version="4.0.2" />
+                <dependency id="Microsoft.Azure.Mobile.Client.SQLiteStore" version="4.0.2" />
+                <dependency id="Newtonsoft.Json" version="10.0.3" />
+                <dependency id="System.ComponentModel.Annotations" version="4.4.1" />
+                <dependency id="Xam.Plugin.Connectivity" version="3.1.1" />
+                <dependency id="Xamarin.FFImageLoading.Forms" version="2.3.4" />
+                <dependency id="Xamarin.FFImageLoading.Transformations" version="2.3.4" />
+                <dependency id="Xamarin.Forms" version="2.5.0.122203" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <!-- Cross-platform reference assemblies -->
+        <file src="../src/Plugin.Boilerplate/bin/Release/netstandard2.0/Plugin.Boilerplate.*" target="lib/netstandard2.0" />
+
+        <!-- Android reference assemblies -->
+        <file src="../src/Plugin.Boilerplate.Android/bin/Release/Plugin.Boilerplate.*" target="lib/MonoAndroid10" />   
+
+        <!-- iOS reference assemblies -->
+        <file src="../src/Plugin.Boilerplate.iOS/bin/Release/Plugin.Boilerplate.*" target="lib/Xamarin.iOS10" />
+
+    </files>
+</package>

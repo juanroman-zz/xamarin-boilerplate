@@ -2367,8 +2367,26 @@ namespace Plugin.Boilerplate.Android
 			// aapt resource value: 0x7f020053
 			public static int avd_hide_password = 2130837587;
 			
+			// aapt resource value: 0x7f020134
+			public static int avd_hide_password_1 = 2130837812;
+			
+			// aapt resource value: 0x7f020135
+			public static int avd_hide_password_2 = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public static int avd_hide_password_3 = 2130837814;
+			
 			// aapt resource value: 0x7f020054
 			public static int avd_show_password = 2130837588;
+			
+			// aapt resource value: 0x7f020137
+			public static int avd_show_password_1 = 2130837815;
+			
+			// aapt resource value: 0x7f020138
+			public static int avd_show_password_2 = 2130837816;
+			
+			// aapt resource value: 0x7f020139
+			public static int avd_show_password_3 = 2130837817;
 			
 			// aapt resource value: 0x7f020055
 			public static int design_bottom_navigation_item_background = 2130837589;

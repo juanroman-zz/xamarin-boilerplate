@@ -1,2 +1,2 @@
-# xamarin-boilerplate
-A library with boilerplate utilities targeting Xamarin Forms projects
+### 0.1.0.0
+* First release ever
